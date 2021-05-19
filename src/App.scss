@@ -1,0 +1,200 @@
+$greyDark: #040404;
+$greyLight: #131313;
+$greyLighter: #282828;
+$greyText: #b3b3b3;
+$greyNav: #090909;
+
+
+//EMEMANKA CHINEDU
+// SPOTIFY UI - REACT
+
+
+* {
+
+  box-sizing: border-box;
+}
+
+// body {
+//   font-family: circular-book;
+// }
+
+.subText {
+  font-size: 0.9rem;
+  color: $greyText;
+}
+
+
+.App {
+
+  height: calc(100vh - 90px);
+  background: $greyLight;
+  display: flex;
+
+
+
+
+}
+
+.flex_container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.navBar {
+  width: 260px;
+  height: 100%;
+  background: $greyDark;
+  padding: 10px;
+  .logo {
+    padding: 1.5rem 1.5rem;
+    img {
+      max-width: 130px;
+    }
+
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      color: $greyText;
+      list-style-type: none;
+      border-radius: 5px;
+      padding: 0.8rem;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      &.active {
+        background: $greyLighter;
+      }
+      &:hover {
+        color: white;
+      }
+      
+    }
+  }
+
+  .cookies {
+    font-size: 0.6rem;
+    color: $greyText;
+    text-align: center;
+    margin-top: auto;
+    padding: 1rem;
+    position: relative;
+    top: 600px;
+
+
+    span {
+      display: block;
+    }
+  }
+
+  
+}
+
+.outerWrap {
+  background: grey;
+  height: 100vh;
+  min-height: 100%;
+
+}
+
+.musicControls {
+  background: $greyLighter;
+  text-align: center;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 2;
+  position: relative;
+  border-top: 1px solid $greyDark;
+}
+
+
+.upperNav {
+  background: rgba(9,9,9,0.78);
+  height: 56px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 0.5rem 2rem;
+  top: 0;
+  // position: fixed;
+  z-index: 2;
+
+}
+
+.main {
+  width: 100%;
+  overflow-y: scroll;
+  position: relative;
+  padding-top: 3rem;
+  .mainContent {
+    color: white;
+    padding: 0.7rem 2rem;
+    h1, h2{
+      font-size: 1.8rem;
+    }
+  }
+
+}
+
+.cardsWrap {
+  padding-bottom: 2rem;
+
+  h2 {
+    margin-bottom: 0 ;
+  }
+
+  .cardsWrapInner {
+
+    display: flex;
+    flex-flow: nowrap;
+
+
+
+  }
+
+  .subText {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+
+
+
+  .card {
+    background: $greyLighter;
+    border-radius: 10px;
+    margin-right: 1.2rem;
+    width: 190px;
+    height: 290px;
+    overflow: hidden;
+    padding: 1.2rem 1.2rem 0.8rem;
+    .cardImage {
+      height: 160px;
+      box-shadow: 0 10px 30px 0 rgba(0,0,0,0.3), 0 1px 2px 0 rgba(0,0,0,0.2);
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .cardContent {
+      padding: 0.4rem;
+      h3 {
+        font-weight: 600;
+        font-size: 0.8rem;
+        margin-bottom: 0;
+        letter-spacing: 0.6px;
+      }
+
+      span {
+        font-size: 0.8rem;
+        color: $greyText;
+
+      }
+    }
+  }
+}
